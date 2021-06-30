@@ -8,37 +8,43 @@
 }
 
 .stars {
-	z-index: 0;
-	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+	z-index: -3;
+	background: #000000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
 }
 
 .twinkling{
-	z-index: 1;
+	z-index: -2;
 	background:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
-	animation: move-twink-back 200s linear infinite;
+	animation: twinkle 300s linear infinite;
 }
 
 .clouds{
-	z-index: 2;
+	z-index: -1;
     background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
-	animation: move-clouds-back 200s linear infinite;
+	animation: clouds 150s linear infinite;
 }
 
-@keyframes move-twink-back {
+@keyframes twinkle {
 	from {background-position:0 0;}
 	to {background-position:-10000px 5000px;}
 }
 
-@keyframes move-clouds-back {
+@keyframes clouds {
 	from {background-position:0 0;}
 	to {background-position:10000px 0;}
 }
 
 /*styles end*/
 
-.App h1 {
-  z-index: 3;
+.App {
+  z-index: 1;
   text-align: center;
   color: red;
+  max-height: 100%;
+}
+
+.bigDiv{
+  margin-top: 25%;
+  font-size: 3rem;
 }
 

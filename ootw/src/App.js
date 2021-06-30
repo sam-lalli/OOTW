@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios'
 import Image from "./Image"
 import './App.css';
+import Header from './Header';
 
 function App() {
 
@@ -17,8 +18,11 @@ function App() {
       console.log(`${err}, Try Fetching Again`)
     })
   }, [])
+
+
   return (
     <div className="App">
+      <Header image={image}/>
       <Image image={image}/>
     </div>
   );

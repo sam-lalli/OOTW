@@ -39,11 +39,9 @@
 .App {
   z-index: 1;
   text-align: center;
+  color: oldlace;
   max-height: 100%;
+  font-family: 'Space Mono', monospace;
 }
 
-.bigDiv{
-  margin-top: 25%;
-  font-size: 3rem;
-}
 

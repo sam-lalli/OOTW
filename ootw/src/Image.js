@@ -18,7 +18,7 @@ const Image = props => {
     // https://youtu.be/q9ZCBR-onRw
     return (
         <div className="Image">
-            <h2>Name:<br></br>{image.title}</h2>
+            <h2 id="typewriter">{image.title}.</h2>
             <div classname="imgContainer">
                 <ReactPlayer className="player" url={image.url} playing={true} loop={true}/>
             </div>
@@ -27,8 +27,8 @@ const Image = props => {
                 {
                     description ?
                     <div>
-                        <h2>Description:</h2>
-                        <p>{image.explanation}</p>
+                        <h2 className="fade">Description:</h2>
+                        <p id="explanation">{image.explanation}</p>
                     </div>
                     : null
                 }

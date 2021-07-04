@@ -16,6 +16,12 @@
 
 }
 
+#image{
+    height: 50vh;
+    width: 60%;
+    margin-top: 2%;
+}
+
 .player{
     width: 100%;
     position: relative;

@@ -13,7 +13,6 @@
     animation: 
     typing 5s steps(60, end),
     blinking .75s step-end infinite;
-
 }
 
 #image{

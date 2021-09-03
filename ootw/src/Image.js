@@ -14,8 +14,11 @@ const Image = props => {
 
     let buttonTitle = title ? "Close Description" : "View Description"
 
-    const isImage = image.url.pop() === "jpg"
-    //image.url.split().pop() === "jpg"
+    const imgUrl =  image.url
+    const isImage = true
+    // if(imgUrl.charAt(imgUrl.length-1) === 'g'){
+    //     isImage = true
+    // }else {isImage = false}
     
 
     
